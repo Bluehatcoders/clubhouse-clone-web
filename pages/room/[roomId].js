@@ -97,6 +97,7 @@ const OtherUser = ({ peer, peerID, muted }) => {
 
   return (
     <User>
+     <meta content="upgrade-insecure-requests" httpEquiv="Content-Security-Policy" />
       <Avatar volume={volume} data-socket-id={peerID}>
         <audio autoPlay ref={ref} />
       </Avatar>
